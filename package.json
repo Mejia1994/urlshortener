@@ -1,0 +1,34 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "freecodecamp: URL Shortener Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mejia1994/urlshortener.git"
+  },
+  "keywords": [
+    "freecodecamp"
+  ],
+  "author": "Juan Rafael Mejia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mejia1994/urlshortener/issues"
+  },
+  "homepage": "https://github.com/Mejia1994/urlshortener#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.12.4",
+    "mongodb": "^3.6.8",
+    "mongoose": "^5.12.12",
+    "nanoid": "^3.1.23",
+    "nodemon": "^2.0.7",
+    "valid-url": "^1.0.9"
+  }
+}
