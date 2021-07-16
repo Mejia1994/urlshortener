@@ -1,0 +1,87 @@
+#contenido {
+  font-family: 'Lucida Grande', 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0px !important;
+  padding: 5px 20px 26px !important;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, SimSun, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Segoe UI', AppleSDGothicNeo-Medium, 'Malgun Gothic', Verdana, Tahoma, sans-serif;
+  padding: 20px;
+  color: rgb(34, 34, 34);
+  font-size: 15px;
+  font-family: 'Roboto Condensed', Tauri, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, SimSun, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Segoe UI', AppleSDGothicNeo-Medium, 'Malgun Gothic', Verdana, Tahoma, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background: rgb(255, 255, 255);
+}
+
+#titulo {
+  clear: both;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 1.275em 0px 0.85em;
+  padding: .2rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(230, 230, 230);
+}
+
+blockquote {
+  margin: 1em 20px;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: rgb(230, 230, 230);
+  padding: 0px 15px;
+  color: rgb(119, 119, 119);
+}
+
+p.info {
+  margin: 1em 0px;
+  word-wrap: break-word;
+  margin-top: 0px;
+}
+
+p.salto {
+  margin: 1em 0px;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: baseline;
+  color: rgb(50, 105, 160);
+}
+
+pre {
+  margin-bottom: 0px;
+  word-wrap: break-word;
+  border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  display: block;
+  overflow-x: auto;
+  color: rgb(101, 123, 131);
+  background: rgb(253, 246, 227);
+}
+
+code {
+  border: 0px;
+  display: block;
+  font-family: Consolas, Inconsolata, Courier, monospace;
+  font-weight: bold;
+  white-space: pre;
+  margin: 0px;
+  word-wrap: break-word;
+  padding: 0px 5px;
+  margin: 0px 2px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.hljs-attribute {
+  color: #6c757d;
+}
+
+.hljs-string {
+  color: #17a2b8;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>URL Shortener API</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-light bg-secondary fixed-top w-100">
+    <div class="container-fluid">
+        <label class="navbar-brand text-white">URL Shortener API</label>
+    </div>
+</nav>
+
+<div class="container d-flex justify-content-center flex-column vh-100">
+    <div class="row">
+        <form class="col-6 align-self-center" method="post" action="/api/shorturl">
+            <div class="d-grid gap-2 w-75">
+                <label for="url" class="fw-bold text-secondary">Insert an URL:</label>
+                <div>
+                    <svg class="bi position-absolute m-1 text-secondary" width="28" height="28" fill="currentColor">ss
+                        <use xlink:href="bootstrap-icons.svg#link-45deg"/>
+                    </svg>
+                    <input class="form-control" style="text-indent: 1.4rem;" type="url" name="url" id="url" required
+                           autocomplete="false"/>
+                </div>
+                <button type="submit" class="btn btn-block btn-sm btn-secondary">Short URL</button>
+            </div>
+        </form>
+
+        <blockquote class="col-6">
+            <p class="fw-bold">Http request</p>
+            <ul class="info row">
+                <li class="m-2">
+                    <code class="col-12" style="white-space: normal;">
+                        POST <span class=" text-secondary">-</span> [base_url]/api/shorturl <span
+                            class="text-secondary">-</span> original_url
+                    </code>
+                    <small class="col-12">&nbsp;output:</small>
+                    <pre class="p-1">{&NewLine;&nbsp;<span class="hljs-attribute">"original_url"</span> : <span
+                        class="hljs-string">"https://www.freecodecamp.org"</span>&NewLine;&nbsp;<span
+                        class="hljs-attribute">"short_url"</span> : <span
+                        class="hljs-string">"O9zIobCo6b"</span>&NewLine;}</pre>
+                </li>
+
+                <li class="m-2">
+                    <code class="col-12" style="white-space: normal;">
+                        GET <span class="text-secondary">-</span> [base_url]/api/shorturl/{short_url}</code>
+                    <small class="col-12">&nbsp;This will redirect to the original URL</small>
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+</div>
+</body>
+</html>

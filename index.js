@@ -1,17 +1,11 @@
-require("dotenv").config();
+const app = require('./api/app');
 
-const express = require('express');
-const app = express();
 
-const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({extended: "false"}));
-app.use(bodyParser.json());
+app.use('/api', require('./api/index'));
 
-const cors = require('cors');
-app.use(cors({optionsSuccessStatus: 200}))
-
-const api = require('./api/api');
-app.use('/api', api);
+app.get("/", function (req, res) {
+    res.render('index');
+});
 
 const listener = app.listen(process.env.port || 3000, function () {
     console.log("sever started on port " + listener.address().port)
