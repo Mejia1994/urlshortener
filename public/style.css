@@ -76,4 +76,15 @@ code {
 .hljs-string {
   color: #17a2b8; }
 
+.bg-blue-grey {
+  background-color: #455a64; }
+
+.text-blue-grey {
+  color: #455a64; }
+
+.btn-blue-grey {
+  color: white !important;
+  border-color: #455a64 !important;
+  background-color: #455a64 !important; }
+
 /*# sourceMappingURL=style.css.map */

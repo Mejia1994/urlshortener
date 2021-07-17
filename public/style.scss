@@ -85,3 +85,19 @@ code {
 .hljs-string {
   color: #17a2b8;
 }
+
+$blue-grey: #455a64;
+
+.bg-blue-grey {
+  background-color: $blue-grey;
+}
+
+.text-blue-grey {
+  color: $blue-grey;
+}
+
+.btn-blue-grey {
+  color: white !important;
+  border-color: $blue-grey !important;
+  background-color: $blue-grey !important;
+}
