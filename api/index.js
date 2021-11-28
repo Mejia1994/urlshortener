@@ -5,7 +5,7 @@ const {nanoid} = require("nanoid");
 const validUrl = require('valid-url');
 
 const middleWareUrl = function (req, res, next) {
-    if (!validUrl.isWebUri(req.body.url)) {
+    if (!validUrl.isWebUri(req.body.url.trim())) {
         res.json({error: 'invalid url'});
         return false;
     }
