@@ -32,8 +32,8 @@
     "mongodb": "^3.6.8",
     "mongoose": "^5.12.12",
     "mustache-express": "^1.3.1",
-    "nanoid": "^3.1.23",
-    "nodemon": "^2.0.7",
+    "nanoid": "^3.1.30",
+    "nodemon": "^2.0.12",
     "valid-url": "^1.0.9"
   }
 }
